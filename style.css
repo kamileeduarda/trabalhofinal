@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #fff1d6;
+    font-size: 15px;
+}
+
+.item {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fcae1e;
+}
+
+body {
+    background-color: #fcae1e;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #fa8128;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #fa8128;
+}
+
+p {
+    text-align: justify;
+    color: #fcae1e;
+    font-size: 20px;
+}
+
+article {
+    margin: 20px;
+    background-color: #fff1d6;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+    background-color: #fff1d6;
+    padding: 20px;
+}
+
+.foto {
+    width: 170px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.legenda {
+    text-decoration: none;
+    color: #fa8128;
+    margin-left: 92px;
+    margin-right: 92px;
+}
+
+ul {
+    font-size: 20px;
+    text-align: justify;
+    color: #fcae1e;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    text-align: justify;
+    color: #fa8128;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.texto {
+    text-align: center;
+    font-size: 12px;
+}
+
+footer {
+    background-color: #fff1d6;
+    color: #fa8128;
+    margin: 20px;
+    padding: 30px;
+} 
+
+#rodapé {
+    text-align: center;
+    color: #fa8128;
+    font-size: 15px;
+}
+
+#botão {
+    text-decoration: none;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#container.mostrar {
+    display: flex;
+}
+
+@keyframes container {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar#container {
+    animation: container .3s;
+}
+
+#pop-up {
+    background: #fff1d6;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid #fa8128;
+    color: #fa8128;
+}
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 4px solid #fa8128;
+    background: #fff1d6;
+    color: #fa8128;
+    font-family: monospace;
+    cursor: pointer;
+    font-size: 20px;
+}
